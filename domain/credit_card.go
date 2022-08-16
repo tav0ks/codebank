@@ -19,7 +19,7 @@ type CreditCard struct {
 }
 
 func NewCreditCard() CreditCard {
-	c := CreditCard{}
+	c := &CreditCard{}
 	c.ID =  uuid.NewV4().String()
 	c.CreatedAt = time.Now()
 	return c
